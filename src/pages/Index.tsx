@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import SpaceBackground from "@/components/SpaceBackground";
 import { useState } from "react";
 
 const Index = () => {
@@ -98,8 +99,9 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <header className="border-b border-border/40 backdrop-blur-sm sticky top-0 z-50 bg-background/80">
+    <div className="min-h-screen bg-background relative">
+      <SpaceBackground />
+      <header className="border-b border-border/40 backdrop-blur-md sticky top-0 z-50 bg-background/60">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
@@ -151,7 +153,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="features" className="py-20 bg-muted/30">
+      <section id="features" className="py-20 bg-muted/10 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-heading font-bold">Возможности платформы</h2>
@@ -207,7 +209,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="pricing" className="py-20 bg-muted/30">
+      <section id="pricing" className="py-20 bg-muted/10 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-heading font-bold">Тарифные планы</h2>
@@ -274,7 +276,7 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="border-t border-border/40 py-12 bg-card/30">
+      <footer className="border-t border-border/40 py-12 bg-card/20 backdrop-blur-sm">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div className="space-y-4">
